@@ -1,0 +1,27 @@
+<br><br><br><br><div class="patient-list">
+  <h2>Patients List</h2>
+  <table class="styled-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Nationality</th>
+        <th>pSickName</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let patient of patients">
+        <td>{{ patient.name }}</td>
+        <td>{{ patient.age }}</td>
+        <td>{{ patient.pnationality}}</td>
+        <td>{{ patient.pSickName}}</td>
+
+        <td>
+          <button (click)="editPatient(patient)">Edit</button>&nbsp;&nbsp;
+          <button (click)="deletePatient(patient)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

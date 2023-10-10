@@ -1,0 +1,10 @@
+.container {
+    background-color: #ece2e220;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .container h2 {
+    color: #333;
+  }

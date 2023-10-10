@@ -1,0 +1,46 @@
+<br><br><br><br><div class="container">
+<form (ngSubmit)="onSubmit()">
+  <h2>Enter doctor or patient</h2>
+  <br>
+  <div class="form-group">
+    <label for="name">Name: </label>
+    <input type="text" id="name" name="name" [(ngModel)]="staffName" required>
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="position">Role: </label>
+    <select id="position" name="position" [(ngModel)]="staffPosition" required>
+      <option value="Doctor">Doctor</option>
+      <option value="Patient">Patient</option>
+    </select>
+  </div>
+ <br>
+  <div *ngIf="staffPosition === 'Doctor'">
+    <div class="form-group">
+      <label for="speciality">Speciality: </label>
+      <input type="text" id="speciality" name="speciality" [(ngModel)]="speciality" required>
+
+      <label for="specialty">ExperienceYear: </label>
+      <input type="text" id="ExperienceYears" name="ExperienceYears" [(ngModel)]="experienceYears" required>
+      <label for="nationality">nationality: </label>
+      <input type="text" id="nationality" name="nationality" [(ngModel)]="nationality" required>
+
+    
+    </div>
+  </div>
+  <br>
+  <div *ngIf="staffPosition === 'Patient'">
+    <div class="form-group">
+      <label for="age">Age: </label>
+      <input type="number" id="age" name="age" [(ngModel)]="patientAge" required>
+      <label for="pnationality">nationality: </label>
+      <input type="text" id="pnationality" name="pnationality" [(ngModel)]="pnationality" required>
+      <label for="pSickName">SickName: </label>
+      <input type="text" id="pSickName" name="pSickName" [(ngModel)]="pSickName" required>
+      
+    </div>
+  </div>
+  <br>
+  <button type="submit" style="color: #fcfbfb; background-color: hsla(157, 92%, 28%, 0.58); border-radius: 10px; width: 80px; height:40px;align-items: center;">Add Staff</button>
+</form>
+</div>

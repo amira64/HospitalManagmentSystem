@@ -1,0 +1,28 @@
+/* dashboard.component.css */
+
+.dashboard {
+  background-color: rgb(138, 232, 193);
+  padding: 20px;
+  margin-top: 30px; /* Add margin-top to create space below the navigation menu */
+  height: 200px;
+  width: 80%; /* Set the width to 100% for full width */
+  border: 1px solid rgb(138, 232, 193);
+  border-radius: 5px;
+}
+
+
+
+
+  .dashboard h2 {
+    color: #006815;
+  }
+  
+  .logo img {
+    max-height: 350px;
+    align-items: center;
+    margin-top: 0%;
+    width: 900px;
+    margin-left: 10px;
+    animation:alternate;
+  }
+ 

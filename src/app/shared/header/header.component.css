@@ -1,0 +1,45 @@
+/* header.component.css */
+.app-header {
+  
+  background-color: rgb(138, 232, 193);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow:   rgb(138, 232, 193);
+  position: fixed; /* Ensure the header stays at the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Set a higher z-index to ensure it's above other elements */
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.title h1 {
+  color: hwb(0 99% 1%);
+  font-size: 24px;
+  margin: 0;
+}
+
+.social-icons a {
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  margin-right: 15px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.social-icons a:hover {
+  color: hwb(0 56% 2%);
+}

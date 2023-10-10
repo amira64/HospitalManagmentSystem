@@ -1,0 +1,31 @@
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  
+.main-content-container {
+  background-color:  rgb(138, 232, 193);/* Background color for the box */
+  border:   rgb(138, 232, 193); /* Border for the box */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Spacing inside the box */
+  box-shadow:  rgb(138, 232, 193); /* Box shadow for a subtle effect */
+  text-align: center; /* Center-align the content */
+  margin: 0 auto; /* Center the box horizontally on the page */
+  width: 1600px;
+  flex-grow: 1;
+  padding: 0%; 
+  margin-left: 0px; 
+  height: 580px;
+  margin-top: 90px;
+}
+
+/* Define your color variables */
+:root {
+  --primary-color: hwb(197 83% 3%);
+  --secondary-color: #1b60d7;
+  --accent-color: rgb(39, 114, 143);
+  /* Add more colors as needed */
+}

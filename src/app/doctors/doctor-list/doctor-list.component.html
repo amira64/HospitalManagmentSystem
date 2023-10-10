@@ -1,0 +1,29 @@
+<br><br><br><br><div class="doctor-list">
+  <h2>Doctors Data</h2>
+  <table class="styled-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Speciality</th>
+        <th>ExperienceYears</th>
+        <th>Nationality</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let doctor of doctors">
+        <td>{{ doctor.name }}</td>
+        <td>{{doctor.speciality}}</td>
+        <td>{{doctor.experienceYears}}</td>
+        <td>{{doctor.nationality}}</td>
+        
+
+       
+        <td>
+          <button (click)="editDoctor(doctor.id)">Edit</button>&nbsp;&nbsp;
+          <button (click)="deleteDoctor(doctor)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

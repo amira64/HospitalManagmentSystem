@@ -1,0 +1,35 @@
+/* sidebar.component.css */
+nav.horizontal-menu {
+  background-color: rgb(138, 232, 193);
+  color: hsl(0, 97%, 30%);
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 90px; /* Adjust the top position to match your header height */
+  left: 0;
+  transition: left 0.3s;
+  width: 100%; /* Set the menu width to 100% to make it horizontal */
+  
+}
+
+.horizontal-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Display the menu items horizontally */
+}
+
+.horizontal-menu li {
+  margin-right: 20px; /* Adjust the spacing between menu items */
+}
+
+.horizontal-menu li:last-child {
+  margin-right: 0; /* Remove margin from the last item to avoid extra space */
+}
+
+.horizontal-menu li a {
+  color: hwb(131 2% 67%);
+  text-decoration: none;
+  font-size: 18px;
+}
